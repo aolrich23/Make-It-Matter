@@ -1,0 +1,99 @@
+
+[
+  {
+    "title": "Baby Wraps (Sewn)",
+    "description": "Soft cotton wraps for babies in neonatal intensive care units or families in crisis.",
+    "organiser": {
+      "name": "Sewing for Charity Australia",
+      "url": "https://sewingforcharity.com/",
+      "location": "QLD"
+    },
+    "category": "Family Services",
+    "craft": "Sewing",
+    "equipment": "Sewing Machine",
+    "materialType": "Fabric",
+    "materialAmount": "See pattern",
+    "approximateTime": "Less than one hour",
+    "need": "Low",
+    "lastUpdated": "2026-02-12",
+    "pattern": {
+      "text": "Download PDF",
+      "url": "https://sewingforcharity.com/wp-content/uploads/2026/01/SFCA-Project-Sheet-BABY-WRAPS.pdf"
+    },
+    "deadline": "Ongoing",
+    "image": "https://picsum.photos/seed/wrap/600/600",
+    "donationInstructions": "Post or deliver to the Sewing Lair, QLD."
+  },
+  {
+    "title": "Beanie for the Homeless",
+    "description": "Warm winter beanies to be distributed during the colder months in Melbourne.",
+    "organiser": {
+      "name": "Knit One Give One (KOGO)",
+      "url": "https://www.kogo.org.au/",
+      "location": "VIC"
+    },
+    "category": "Social Welfare",
+    "craft": "Knitting",
+    "equipment": "Knitting Needles",
+    "materialType": "Wool",
+    "materialAmount": "100g 8-ply",
+    "approximateTime": "2-4 hours",
+    "need": "High",
+    "lastUpdated": "2026-01-15",
+    "pattern": {
+      "text": "Standard Beanie Pattern",
+      "url": "https://www.kogo.org.au/patterns"
+    },
+    "deadline": "Winter drive ends July",
+    "image": "https://picsum.photos/seed/beanie/600/600",
+    "donationInstructions": "Drop off at various collection points across Victoria."
+  },
+  {
+    "title": "Wildlife Pouches",
+    "description": "Lined pouches for rescued joeys and other small marsupials.",
+    "organiser": {
+      "name": "Animal Rescue Craft Guild",
+      "url": "https://www.facebook.com/groups/animalrescuecraftguild/",
+      "location": "NSW"
+    },
+    "category": "Environment & Wildlife",
+    "craft": "Sewing",
+    "equipment": "Sewing Machine",
+    "materialType": "Cotton",
+    "materialAmount": "50cm square",
+    "approximateTime": "1-2 hours",
+    "need": "Medium",
+    "lastUpdated": "2026-02-01",
+    "pattern": {
+      "text": "Pouch Pattern Guide",
+      "url": "https://www.facebook.com/groups/animalrescuecraftguild/"
+    },
+    "deadline": "Ongoing",
+    "image": "https://picsum.photos/seed/pouch/600/600",
+    "donationInstructions": "Check the guild website for current hub locations."
+  },
+  {
+    "title": "Memory Blankets",
+    "description": "Quilted or crocheted blankets for hospital patients in palliative care.",
+    "organiser": {
+      "name": "Blankets with Love",
+      "url": "https://example.org",
+      "location": "WA"
+    },
+    "category": "Health",
+    "craft": "Crochet",
+    "equipment": "Crochet Hook",
+    "materialType": "Yarn",
+    "materialAmount": "5-6 skeins",
+    "approximateTime": "Over 4 hours",
+    "need": "Low",
+    "lastUpdated": "2026-02-10",
+    "pattern": {
+      "text": "Simple Afghan Pattern",
+      "url": "https://example.org/pattern"
+    },
+    "deadline": "Ongoing",
+    "image": "https://picsum.photos/seed/blanket/600/600",
+    "donationInstructions": "Mail to Perth head office."
+  }
+]
