@@ -57,3 +57,22 @@ This application is built as a static site, making it ideal for **Google Cloud S
 - **TypeScript**: Full type safety for data and props.
 - **Tailwind CSS**: Utility-first styling with a custom warm palette.
 - **Single Source of Truth**: Data-driven UI derived from a central JSON source.
+
+## Data Transformation (ETL)
+
+The project uses a Python-based ETL (Extract, Transform, Load) process to manage data from various sources.
+
+### Structure
+- **`etl/sources/`**: Contains raw JSON data files (e.g., `manual.json`, `sewforcharity.json`).
+- **`etl/transformers/`**: Python classes responsible for normalizing specific source data into the application schema.
+- **`etl/merge.py`**: The main script that aggregates all sources.
+
+### Running the Transformation
+To update `data/projects.json` with the latest source data:
+
+1. Open a terminal in the project root.
+2. Run the merge script:
+   ```bash
+   python3 etl/merge.py
+   ```
+3. The script will process the sources and overwrite `data/projects.json`.

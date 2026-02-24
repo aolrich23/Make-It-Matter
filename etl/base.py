@@ -5,7 +5,7 @@ class ProjectTransformer(ABC):
     @property
     @abstractmethod
     def source_file(self) -> str:
-        """The filename in data/sources/ to read from."""
+        """The filename in etl/sources/ to read from."""
         pass
 
     @abstractmethod
