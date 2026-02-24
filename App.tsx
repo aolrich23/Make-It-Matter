@@ -68,19 +68,21 @@ const App: React.FC = () => {
       if (!matchesSearch) return false;
 
       // Filter Logic: OR within group, AND across groups
-      const checkFilter = (items: string[], field?: string | string[]) => {
-        if (items.length === 0) return true;
-        if (!field) return false; // If a filter is selected but project has no value for it, hide it
-        if (Array.isArray(field)) {
-          return items.some(item => field.includes(item));
+      const checkFilter = (selectedOptions: string[], projectValues: string | string[]) => {
+        if (selectedOptions.length === 0) return true;
+        if (Array.isArray(projectValues)) {
+          return projectValues.some(val => selectedOptions.includes(val));
         }
-        return items.includes(field);
+        return selectedOptions.includes(projectValues);
       };
+
+      // Extract material types for filtering
+      const projectMaterialTypes = project.materials.map(m => m.type);
 
       return (
         checkFilter(filters.need, project.need) &&
         checkFilter(filters.craft, project.craft) &&
-        checkFilter(filters.materialType, project.materials.map(m => m.type)) &&
+        checkFilter(filters.materialType, projectMaterialTypes) &&
         checkFilter(filters.category, project.category) &&
         checkFilter(filters.location, project.organiser.location) &&
         checkFilter(filters.approximateTime, project.approximateTime)
@@ -90,28 +92,25 @@ const App: React.FC = () => {
 
   // Derived unique filter options
   const filterOptions = useMemo(() => {
-    const timeOrder = ["Less than one hour", "1-2 hours", "2-4 hours", "Over 4 hours"];
-
     return {
-      need: Array.from(new Set(projects.map(p => p.need).filter(Boolean) as string[])).sort(),
-      craft: Array.from(new Set(projects.flatMap(p => p.craft).filter(Boolean))).sort(),
-      materialType: Array.from(new Set(projects.flatMap(p => p.materials.map(m => m.type)).filter(Boolean))).sort(),
-      category: Array.from(new Set(projects.map(p => p.category).filter(Boolean) as string[])).sort(),
-      location: Array.from(new Set(projects.map(p => p.organiser.location).filter(Boolean) as string[])).sort(),
-      approximateTime: Array.from(new Set(projects.map(p => p.approximateTime).filter(Boolean) as string[]))
-        .sort((a, b) => timeOrder.indexOf(a) - timeOrder.indexOf(b)),
+      need: Array.from(new Set(projects.map(p => p.need))).sort(),
+      craft: Array.from(new Set(projects.flatMap(p => p.craft))).sort(),
+      materialType: Array.from(new Set(projects.flatMap(p => p.materials.map(m => m.type)))).sort(),
+      category: Array.from(new Set(projects.map(p => p.category))).sort(),
+      location: Array.from(new Set(projects.map(p => p.organiser.location))).sort(),
+      approximateTime: Array.from(new Set(projects.map(p => p.approximateTime))).sort(),
     };
   }, [projects]);
 
   if (error) {
     return (
-      <div className="flex items-center justify-center min-h-screen bg-cloud" role="alert">
-        <div className="text-center p-8 bg-white rounded-2xl shadow-sm border border-primary/10">
-          <h2 className="text-3xl font-normal text-secondary mb-2">Oops!</h2>
-          <p className="text-gray-text mb-4 font-medium">{error}</p>
+      <div className="flex items-center justify-center min-h-screen bg-stone-50" role="alert">
+        <div className="text-center p-8 bg-white rounded-lg shadow-sm border border-stone-200">
+          <h2 className="text-2xl font-semibold text-stone-800 mb-2">Oops!</h2>
+          <p className="text-stone-700 mb-4">{error}</p>
           <button 
             onClick={() => window.location.reload()}
-            className="px-6 py-2 bg-primary text-white rounded-xl hover:bg-secondary transition font-bold shadow-sm"
+            className="px-6 py-2 bg-stone-900 text-white rounded-md hover:bg-stone-700 transition font-bold"
           >
             Retry
           </button>
@@ -121,8 +120,8 @@ const App: React.FC = () => {
   }
 
   return (
-    <div className="min-h-screen flex flex-col bg-cloud">
-      <Header />
+    <div className="min-h-screen flex flex-col">
+      <Header searchQuery={searchQuery} onSearchChange={setSearchQuery} />
       
       <main className="flex-grow flex flex-col md:flex-row max-w-7xl w-full mx-auto px-4 py-8 gap-8">
         {/* Sidebar - Persistent */}
@@ -137,38 +136,15 @@ const App: React.FC = () => {
 
         {/* Main Content Area */}
         <div className="flex-grow">
-          <div className="mb-8">
-            <div className="max-w-2xl mb-8 relative group">
-              <div className="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">
-                <svg 
-                  className="h-5 w-5 text-primary/60 group-focus-within:text-primary transition-colors" 
-                  fill="none" 
-                  viewBox="0 0 24 24" 
-                  stroke="currentColor"
-                  aria-hidden="true"
-                >
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-                </svg>
-              </div>
-              <input
-                type="text"
-                id="search-input"
-                aria-label="Search by project name or organization"
-                className="block w-full pl-11 pr-4 py-4 bg-white border border-primary/20 rounded-2xl leading-5 focus:outline-none focus:ring-4 focus:ring-accent/50 focus:border-primary transition-all text-secondary placeholder-gray-text/60 shadow-sm"
-                placeholder="Search by project name or organization..."
-                value={searchQuery}
-                onChange={(e) => setSearchQuery(e.target.value)}
-              />
-            </div>
-
+          <div className="mb-6">
             <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-4">
-              <h2 className="text-2xl font-normal text-secondary" aria-live="polite">
+              <h2 className="text-xl font-bold text-stone-800" aria-live="polite">
                 {isLoading ? 'Searching...' : `${filteredProjects.length} Projects found`}
               </h2>
               {(Object.values(filters) as string[][]).some(f => f.length > 0) && (
                 <button 
                   onClick={clearAllFilters}
-                  className="text-sm font-bold text-primary hover:text-secondary underline decoration-accent decoration-2 transition px-2 py-1 focus:ring-2 focus:ring-accent rounded-md"
+                  className="text-sm font-bold text-orange-800 hover:text-orange-950 underline decoration-orange-200 transition px-2 py-1 focus:ring-2 focus:ring-orange-400 rounded-md"
                 >
                   Clear all filters
                 </button>
@@ -182,7 +158,7 @@ const App: React.FC = () => {
         </div>
       </main>
 
-      <footer className="py-10 border-t border-primary/10 bg-white text-center text-gray-text/60 text-sm font-bold">
+      <footer className="py-10 border-t border-stone-200 bg-stone-50 text-center text-stone-600 text-sm font-medium">
         <p>&copy; {new Date().getFullYear()} Make It Matter – Charity Craft Finder</p>
       </footer>
     </div>

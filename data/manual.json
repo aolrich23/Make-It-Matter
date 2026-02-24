@@ -1,0 +1,184 @@
+[
+  {
+    "title": "Australian Red Cross Trauma Teddy",
+    "description": "Trauma Teddies provide comfort to children and adults during times of crisis. Every teddy must be knitted to a specific pattern and checked by a Red Cross coordinator.",
+    "organiser": {
+      "name": "Australian Red Cross",
+      "url": "https://www.redcross.org.au/",
+      "location": "National"
+    },
+    "category": "Emergency Services",
+    "craft": ["Knitting"],
+    "equipment": ["3.25mm Knitting Needles"],
+    "materials": [
+      { "type": "8-ply Acrylic Yarn", "amount": "Approx 50-100g" }
+    ],
+    "approximateTime": "Over 4 hours",
+    "community": "Join the Red Cross Knitting community through your local branch.",
+    "lastUpdated": "2024-05-22",
+    "pattern": {
+      "text": "View Pattern & Story",
+      "url": "https://www.redcross.org.au/act/knitting-for-charity-trauma-teddies/"
+    },
+    "deadline": "Ongoing",
+    "image": "https://images.unsplash.com/photo-1559461678-834ff5a041f0?auto=format&fit=crop&q=80&w=800",
+    "donationInstructions": "Teddies must be checked for safety. Contact your local Red Cross branch for drop-off details."
+  },
+  {
+    "title": "Joey Pouch Sets (Inner & Outer)",
+    "description": "Sets of inner and outer pouches for rescued joeys. Inners must be 100% natural fibers (cotton/flannel) to prevent overheating.",
+    "organiser": {
+      "name": "Animal Rescue Craft Guild",
+      "url": "https://craftguild.org.au/",
+      "location": "National"
+    },
+    "category": "Environment & Wildlife",
+    "craft": ["Sewing"],
+    "equipment": ["Sewing Machine"],
+    "materials": [
+      { "type": "Cotton", "amount": "0.5m fabric" },
+      { "type": "Polar Fleece", "amount": "0.5m fabric" }
+    ],
+    "approximateTime": "1-2 hours",
+    "need": "Medium",
+    "community": "Join the Animal Rescue Craft Guild Facebook group to connect with other makers.",
+    "lastUpdated": "2024-05-22",
+    "pattern": {
+      "text": "Download Pouch Pattern",
+      "url": "https://craftguild.org.au/wp-content/uploads/2020/01/Joey-Pouch-Inner-Outer-and-Hanging-Guide-2020.pdf"
+    },
+    "deadline": "Ongoing",
+    "image": "https://images.unsplash.com/photo-1549194382-34909695d540?auto=format&fit=crop&q=80&w=800",
+    "donationInstructions": "Ensure all threads are trimmed. Send to designated regional hubs listed on the Guild website."
+  },
+  {
+    "title": "3D Hanging Bag",
+    "description": "Specialised 3D hanging bags for wildlife like possums and gliders to sleep in safely while in care.",
+    "organiser": {
+      "name": "Animal Rescue Craft Guild",
+      "url": "https://craftguild.org.au/",
+      "location": "National"
+    },
+    "category": "Environment & Wildlife",
+    "craft": ["Sewing"],
+    "equipment": ["Sewing Machine"],
+    "materials": [
+      { "type": "Cotton", "amount": "0.5m fabric" },
+      { "type": "Polar Fleece", "amount": "0.5m fabric" }
+    ],
+    "approximateTime": "1-2 hours",
+    "need": "Medium",
+    "community": "Connect with the Guild community on their official website forums.",
+    "lastUpdated": "2024-05-22",
+    "pattern": {
+      "text": "Download 3D Bag Pattern",
+      "url": "https://craftguild.org.au/wp-content/uploads/2020/01/3D-Hanging-Bag-Pattern-v1.pdf"
+    },
+    "deadline": "Ongoing",
+    "image": "https://images.unsplash.com/photo-1522338140262-f46f5913618a?auto=format&fit=crop&q=80&w=800",
+    "donationInstructions": "Must use natural fibers for inners. Check the Guild website for specific fabric requirements."
+  },
+  {
+    "title": "Bat Wrap",
+    "description": "Soft wraps used to secure bats and flying foxes while they are being treated or fed by carers. Helps keep wings tucked safely.",
+    "organiser": {
+      "name": "Animal Rescue Craft Guild",
+      "url": "https://craftguild.org.au/",
+      "location": "National"
+    },
+    "category": "Environment & Wildlife",
+    "craft": ["Sewing"],
+    "equipment": ["Sewing Machine"],
+    "materials": [
+      { "type": "Cotton", "amount": "Small scraps" },
+      { "type": "Flannel", "amount": "Small scraps" }
+    ],
+    "approximateTime": "Less than one hour",
+    "need": "High",
+    "community": "The Bat Rescue community is very active on the Guild's social channels.",
+    "lastUpdated": "2024-05-22",
+    "pattern": {
+      "text": "Download Bat Wrap Pattern",
+      "url": "https://craftguild.org.au/wp-content/uploads/2020/01/Bat-Wrap-Pattern-v2.pdf"
+    },
+    "deadline": "Ongoing",
+    "image": "https://images.unsplash.com/photo-1605036120353-8323a63b018b?auto=format&fit=crop&q=80&w=800",
+    "donationInstructions": "Wraps should be soft and breathable. Post to regional hubs as per website."
+  },
+  {
+    "title": "Wrap with Love Blanket Square",
+    "description": "A single 25cm x 25cm square. These building blocks are joined by volunteers to create warm wraps for those in need worldwide.",
+    "organiser": {
+      "name": "Wrap with Love",
+      "url": "https://wrapwithlove.org/",
+      "location": "NSW"
+    },
+    "category": "Social Welfare",
+    "craft": ["Knitting", "Crochet"],
+    "equipment": ["4mm Needles", "4mm Hook"],
+    "materials": [
+      { "type": "8-ply Acrylic Yarn", "amount": "Approx 50g" }
+    ],
+    "approximateTime": "Less than one hour",
+    "community": "Visit the Wrap with Love warehouse in Alexandria to meet other volunteers.",
+    "lastUpdated": "2024-05-22",
+    "pattern": {
+      "text": "Knitting Instructions",
+      "url": "https://wrapwithlove.org/knitting-patterns/"
+    },
+    "deadline": "Ongoing",
+    "image": "https://images.unsplash.com/photo-1610450846045-8d0c710c4367?auto=format&fit=crop&q=80&w=800",
+    "donationInstructions": "Squares should be exactly 25cm x 25cm. Drop at local collection points or post to Alexandria NSW."
+  },
+  {
+    "title": "Wrap with Love Full Blanket",
+    "description": "A completed wrap consisting of 28 squares (4 wide by 7 long), sewn together securely to create a full blanket for those suffering from cold.",
+    "organiser": {
+      "name": "Wrap with Love",
+      "url": "https://wrapwithlove.org/",
+      "location": "NSW"
+    },
+    "category": "Social Welfare",
+    "craft": ["Sewing", "Knitting"],
+    "equipment": ["Tapestry Needle"],
+    "materials": [
+      { "type": "28 Squares", "amount": "1 set" },
+      { "type": "8-ply Yarn", "amount": "Small amount for joining" }
+    ],
+    "approximateTime": "Over 4 hours",
+    "community": "Join a local 'Wrap with Love' sewing circle in your area.",
+    "lastUpdated": "2024-05-22",
+    "pattern": {
+      "text": "Assembly Instructions",
+      "url": "https://wrapwithlove.org/sewing-instructions/"
+    },
+    "deadline": "Ongoing",
+    "image": "https://images.unsplash.com/photo-1544253322-297f6445585f?auto=format&fit=crop&q=80&w=800",
+    "donationInstructions": "Join securely using a mattress stitch or similar strong seam. Deliver to Alexandria warehouse."
+  },
+  {
+    "title": "Wildlife Pouches",
+    "description": "Lined pouches for rescued joeys and other small marsupials.",
+    "organiser": {
+      "name": "Animal Rescue Craft Guild",
+      "url": "https://www.facebook.com/groups/animalrescuecraftguild/",
+      "location": "NSW"
+    },
+    "category": "Environment & Wildlife",
+    "craft": ["Sewing"],
+    "equipment": ["Sewing Machine"],
+    "materials": [
+      { "type": "Cotton", "amount": "50cm square" }
+    ],
+    "approximateTime": "1-2 hours",
+    "need": "Medium",
+    "lastUpdated": "2026-02-01",
+    "pattern": {
+      "text": "Pouch Pattern Guide",
+      "url": "https://www.facebook.com/groups/animalrescuecraftguild/"
+    },
+    "deadline": "Ongoing",
+    "image": "https://picsum.photos/seed/pouch/600/600",
+    "donationInstructions": "Check the guild website for current hub locations."
+  }
+]
