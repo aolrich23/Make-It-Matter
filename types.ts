@@ -12,6 +12,11 @@ export interface Pattern {
   url: string;
 }
 
+export interface Material {
+  type: string;
+  amount: string;
+}
+
 export interface Project {
   title: string;
   description: string;
@@ -19,10 +24,9 @@ export interface Project {
   category: string;
   craft: string[];
   equipment: string[];
-  materials: { type: string; amount: string }[];
+  materials: Material[];
   approximateTime: string;
-  need?: Urgency;
-  community?: string;
+  need: Urgency;
   lastUpdated: string;
   pattern: Pattern;
   deadline: string;
