@@ -20,21 +20,21 @@ const Sidebar: React.FC<SidebarProps> = ({ filters, options, onFilterChange, onC
   ];
 
   return (
-    <aside className="bg-white p-6 rounded-2xl border border-stone-200 shadow-sm space-y-8" aria-label="Project Filters">
+    <aside className="bg-white p-6 rounded-2xl border border-primary/10 shadow-sm space-y-6" aria-label="Project Filters">
       <div className="flex items-center justify-between md:block">
-        <h3 className="text-lg font-semibold text-stone-900 mb-4">Filters</h3>
+        <h3 className="text-xl font-normal text-secondary mb-2">Filters</h3>
         <button 
           onClick={onClearAll}
-          className="text-sm font-medium text-stone-500 hover:text-stone-700 md:hidden focus:ring-2 focus:ring-stone-400 rounded-md px-1"
+          className="text-sm font-bold text-primary hover:text-secondary md:hidden focus:ring-2 focus:ring-accent rounded-md px-1 transition-colors"
         >
           Reset
         </button>
       </div>
 
-      <div className="space-y-8">
-        {sections.map(section => (
-          <fieldset key={section.key} className="space-y-3 border-none p-0 m-0">
-            <legend className="text-sm font-bold uppercase tracking-wider text-stone-600 mb-2">
+      <div className="space-y-0">
+        {sections.map((section, index) => (
+          <fieldset key={section.key} className={`border-none p-0 m-0 ${index > 0 ? 'mt-10' : ''}`}>
+            <legend className="text-xs font-bold uppercase tracking-widest text-primary/70 mb-3">
               {section.label}
             </legend>
             <div className="space-y-2">
@@ -46,20 +46,20 @@ const Sidebar: React.FC<SidebarProps> = ({ filters, options, onFilterChange, onC
                         type="checkbox"
                         checked={filters[section.key].includes(option)}
                         onChange={() => onFilterChange(section.key, option)}
-                        className="h-4 w-4 rounded border-stone-400 text-stone-800 focus:ring-stone-500 cursor-pointer"
+                        className="h-4 w-4 rounded border-primary/30 text-primary focus:ring-accent cursor-pointer"
                       />
                     </div>
                     <span className={`ml-3 text-sm transition-colors ${
                       filters[section.key].includes(option) 
-                        ? 'text-stone-900 font-semibold underline decoration-stone-300' 
-                        : 'text-stone-700 group-hover:text-stone-900 font-medium'
+                        ? 'text-secondary font-bold underline decoration-accent decoration-2' 
+                        : 'text-gray-text group-hover:text-primary font-medium'
                     }`}>
                       {option}
                     </span>
                   </label>
                 ))
               ) : (
-                <p className="text-xs text-stone-500 italic">No options available</p>
+                <p className="text-xs text-gray-text/50 italic font-medium">No options available</p>
               )}
             </div>
           </fieldset>

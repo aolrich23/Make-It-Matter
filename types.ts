@@ -17,12 +17,12 @@ export interface Project {
   description: string;
   organiser: Organiser;
   category: string;
-  craft: string;
-  equipment: string;
-  materialType: string;
-  materialAmount: string;
+  craft: string[];
+  equipment: string[];
+  materials: { type: string; amount: string }[];
   approximateTime: string;
-  need: Urgency;
+  need?: Urgency;
+  community?: string;
   lastUpdated: string;
   pattern: Pattern;
   deadline: string;

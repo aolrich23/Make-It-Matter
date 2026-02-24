@@ -34,4 +34,27 @@ const FilterTags: React.FC<FilterTagsProps> = ({ filters, onClearCategory }) => 
           key={category}
           onClick={() => onClearCategory(category)}
           aria-label={`Remove all ${getDisplayCategoryName(category)} filters: ${values.join(', ')}`}
-          className="group inline-flex items-center px-4 py-2 bg-white border border-stone-300 rounded-full text-xs font-bold text-stone-800 hover:bg-stone-50 hover:border-stone-500 transition-all shadow-sm focus:ring
+          className="group inline-flex items-center px-4 py-2 bg-white border border-primary/20 rounded-full text-xs font-bold text-secondary hover:bg-cloud hover:border-primary transition-all shadow-sm focus:ring-2 focus:ring-accent outline-none"
+        >
+          <span className="text-primary mr-1.5 font-bold capitalize">
+            {getDisplayCategoryName(category)}:
+          </span>
+          <span className="max-w-[400px] truncate">
+            {values.join(', ')}
+          </span>
+          <svg 
+            className="w-3.5 h-3.5 ml-2 text-primary/50 group-hover:text-secondary flex-shrink-0" 
+            fill="none" 
+            stroke="currentColor" 
+            viewBox="0 0 24 24" 
+            aria-hidden="true"
+          >
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </button>
+      ))}
+    </div>
+  );
+};
+
+export default FilterTags;
