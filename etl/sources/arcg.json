@@ -8,11 +8,21 @@
       "location": "National"
     },
     "category": "Environment & Wildlife",
-    "craft": ["Sewing"],
-    "equipment": ["Sewing Machine"],
+    "craft": [
+      "Sewing"
+    ],
+    "equipment": [
+      "Sewing Machine"
+    ],
     "materials": [
-      { "type": "Cotton", "amount": "0.5m fabric" },
-      { "type": "Polar Fleece", "amount": "0.5m fabric" }
+      {
+        "type": "Cotton",
+        "amount": "0.5m fabric"
+      },
+      {
+        "type": "Polar Fleece",
+        "amount": "0.5m fabric"
+      }
     ],
     "approximateTime": "1-2 hours",
     "need": "Medium",
@@ -35,11 +45,21 @@
       "location": "National"
     },
     "category": "Environment & Wildlife",
-    "craft": ["Sewing"],
-    "equipment": ["Sewing Machine"],
+    "craft": [
+      "Sewing"
+    ],
+    "equipment": [
+      "Sewing Machine"
+    ],
     "materials": [
-      { "type": "Cotton", "amount": "0.5m fabric" },
-      { "type": "Polar Fleece", "amount": "0.5m fabric" }
+      {
+        "type": "Cotton",
+        "amount": "0.5m fabric"
+      },
+      {
+        "type": "Polar Fleece",
+        "amount": "0.5m fabric"
+      }
     ],
     "approximateTime": "1-2 hours",
     "need": "Medium",
@@ -62,11 +82,21 @@
       "location": "National"
     },
     "category": "Environment & Wildlife",
-    "craft": ["Sewing"],
-    "equipment": ["Sewing Machine"],
+    "craft": [
+      "Sewing"
+    ],
+    "equipment": [
+      "Sewing Machine"
+    ],
     "materials": [
-      { "type": "Cotton", "amount": "Small scraps" },
-      { "type": "Flannel", "amount": "Small scraps" }
+      {
+        "type": "Cotton",
+        "amount": "Small scraps"
+      },
+      {
+        "type": "Flannel",
+        "amount": "Small scraps"
+      }
     ],
     "approximateTime": "Less than one hour",
     "need": "High",
@@ -89,10 +119,17 @@
       "location": "NSW"
     },
     "category": "Environment & Wildlife",
-    "craft": ["Sewing"],
-    "equipment": ["Sewing Machine"],
+    "craft": [
+      "Sewing"
+    ],
+    "equipment": [
+      "Sewing Machine"
+    ],
     "materials": [
-      { "type": "Cotton", "amount": "50cm square" }
+      {
+        "type": "Cotton",
+        "amount": "50cm square"
+      }
     ],
     "approximateTime": "1-2 hours",
     "need": "Medium",
