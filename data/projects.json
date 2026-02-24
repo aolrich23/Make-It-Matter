@@ -1,4 +1,3 @@
-
 [
   {
     "title": "3D Hanging Bag",
@@ -71,6 +70,7 @@
   },
   {
     "title": "Baby Wraps (Sewn)",
+    "description": "Soft cotton wraps for babies in neonatal intensive care units or families in crisis.",
     "description": "Baby Wraps (Sewn)",
     "organiser": {
       "name": "Sewing for Charity Australia",
@@ -78,6 +78,13 @@
       "location": "QLD"
     },
     "category": "Family Services",
+    "craft": "Sewing",
+    "equipment": "Sewing Machine",
+    "materialType": "Fabric",
+    "materialAmount": "See pattern",
+    "approximateTime": "Less than one hour",
+    "need": "Low",
+    "lastUpdated": "2026-02-12",
     "craft": [
       "Sewing"
     ],
@@ -137,38 +144,6 @@
     "deadline": "Ongoing",
     "image": "https://images.unsplash.com/photo-1605036120353-8323a63b018b?auto=format&fit=crop&q=80&w=800",
     "donationInstructions": "Wraps should be soft and breathable. Post to regional hubs as per website."
-  },
-  {
-    "title": "Beanie for the Homeless",
-    "description": "Warm winter beanies to be distributed during the colder months in Melbourne.",
-    "organiser": {
-      "name": "Knit One Give One (KOGO)",
-      "url": "https://www.kogo.org.au/",
-      "location": "VIC"
-    },
-    "category": "Social Welfare",
-    "craft": [
-      "Knitting"
-    ],
-    "equipment": [
-      "Knitting Needles"
-    ],
-    "materials": [
-      {
-        "type": "Wool",
-        "amount": "100g 8-ply"
-      }
-    ],
-    "approximateTime": "2-4 hours",
-    "need": "High",
-    "lastUpdated": "2026-01-15",
-    "pattern": {
-      "text": "Standard Beanie Pattern",
-      "url": "https://www.kogo.org.au/patterns"
-    },
-    "deadline": "Winter drive ends July",
-    "image": "https://picsum.photos/seed/beanie/600/600",
-    "donationInstructions": "Drop off at various collection points across Victoria."
   },
   {
     "title": "Burp Cloths",
@@ -366,38 +341,6 @@
     "deadline": "Ongoing",
     "image": "https://sewingforcharity.com/wp-content/uploads/2025/09/Marble-Maze-526x600.jpg",
     "donationInstructions": "Mail to: 38 Bladensburg Drive, Waterford QLD 4133. Deliver to: The Sewing Lair Beenleigh or Moorooka. Please label donations."
-  },
-  {
-    "title": "Memory Blankets",
-    "description": "Quilted or crocheted blankets for hospital patients in palliative care.",
-    "organiser": {
-      "name": "Blankets with Love",
-      "url": "https://example.org",
-      "location": "WA"
-    },
-    "category": "Health",
-    "craft": [
-      "Crochet"
-    ],
-    "equipment": [
-      "Crochet Hook"
-    ],
-    "materials": [
-      {
-        "type": "Yarn",
-        "amount": "5-6 skeins"
-      }
-    ],
-    "approximateTime": "Over 4 hours",
-    "need": "Low",
-    "lastUpdated": "2026-02-10",
-    "pattern": {
-      "text": "Simple Afghan Pattern",
-      "url": "https://example.org/pattern"
-    },
-    "deadline": "Ongoing",
-    "image": "https://picsum.photos/seed/blanket/600/600",
-    "donationInstructions": "Mail to Perth head office."
   },
   {
     "title": "Pocket Tissue Cover",
